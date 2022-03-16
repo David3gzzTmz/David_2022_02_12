@@ -28,5 +28,5 @@ var app3 = new Vue({
 
 var Vegeta = new Vue({
 data:	{
-vegeta: 'https://static.wikia.nocookie.net/dragonball/images/c/cc/Vegeta7497237498723jfsdkfhjksdsfsd.jpg/revision/latest?cb=20131028231038&path-prefix=es'
+vegeta: 'https://i.quotev.com/img/q/u/15/6/11/cad6aeaf90-imag.jpg'
 }});

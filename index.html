@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+	 <div class="row" style="background-color:#9af">
+  <div class="col">
+  <h4>Liga1 </h4>
+  </div>
+  <div class="col">
+  <h4>liga2 </h4>
+  </div>
+  <div class="col">
+  <h4>liga3 </h4>
+  </div>
+  <div class="col">
+  <h4>liga4 </h4>
+  </div>
+  </div>
+	
+<h4>Título</h4>
+	<template v-if="ok">
+  <p>V</p>
+  <p>Párrafo 2</p>
+</template>
+
+<script src="script.js"> </script>
+	<h1>Pasatiempos de David</h1>
+	<p>Hola</p>
+	<div id="app">
+  {{ message }}
+		<script src="script.js"> </script>
+</div>	
+
+	<div id="app-2">
+  <span v-bind:title="message">
+    Mira a esta hora se cargo la página.
+  </span>
+		<script src="script.js"> </script>
+</div>
+
+
+<div id="apex">
+    <button class="btn btn-primary" v-on:click="isHidden = !isHidden">Mostrar/Ocultar</button>
+<p v-if="!isHidden">Aqui hay hobbies</p>
+<p v-if="isHidden">no funciona</p>
+</div>	
+
+<ul id="Juegos" class="demo">
+		<h4>VideoJuegos</h4>
+  <li v-for="value in object">
+    {{ value }}
+  </li>
+</ul>
+	
+<div id="Instrum">
+	<h4>Tocar instrumentos musicales</h4>
+<button v-on:click="di('Hey Jude, Martillito, With a little help of my friends, For No One,Angeles fuimos')">Piano</button>
+<button v-on:click="di('Ill be on My Way, Temblando, Contigo a la distancia, Probablemente, Te vi venir, Te quiero, Sin Ti')">Guitarra</button>
+</div>	
+
+	<div id="yt">
+		<h4> Ver videos de Youtube</h4>
+<select v-model="selected">
+  <option v-for="option in options" v-bind:value="option.value">
+    {{ option.text }}
+  </option>
+</select>
+<span>Selected: {{ selected }}</span>
+		<script src="script.js"> </script>
+</div>	
+	
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

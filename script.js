@@ -4,7 +4,7 @@ var app = new Vue({
     message: 'Hola Vue!'
   }
 })
-
+ 
 var app2 = new Vue({
   el: '#app-2',
   data: {
